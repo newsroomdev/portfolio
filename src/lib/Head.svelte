@@ -1,10 +1,10 @@
-<script>
+<script lang="ts">
 	export let title = "Gerald Rich's Portfolio";
 	export let description = "Check out my portfolio and see what I've worked on.";
 	export let keywords = 'portfolio, web development, front end, developer';
 	export let author = 'Gerald Rich';
 	export let image = 'https://example.com/image.png';
-	export let url = 'https://example.com';
+	export let url = 'http://projects.geraldri.ch/portfolio/index.html';
 </script>
 
 <svelte:head>

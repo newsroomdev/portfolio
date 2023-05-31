@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import Headroom from "headroom.js";
+	import Headroom from 'headroom.js';
 
 	onMount(() => {
 		const jq = window.$;
@@ -44,7 +44,7 @@
 		}
 
 		function chngeOpacity() {
-			jq("div.item").each((_, elem) => {
+			jq('div.item').each((_, elem) => {
 				var img = jq(elem);
 				if (isScrolledIntoView(elem)) {
 					img.css('opacity', '1.0');
@@ -59,7 +59,7 @@
 				chngeOpacity();
 				jq(window).scroll(chngeOpacity);
 			} else {
-				var $imgs = jq("img");
+				var $imgs = jq('img');
 				var first_imgs = $imgs.slice(0, 6);
 				jq(first_imgs).each((_, elem) => {
 					var img = jq(elem);
@@ -77,9 +77,9 @@
 					}
 				});
 			}
-			jq("img").unveil();
+			jq('img').unveil();
 
-			const hedElem = document.getElementById('page-headr')
+			const hedElem = document.getElementById('page-headr');
 			if (hedElem) {
 				const header = new Headroom(hedElem, {
 					tolerance: 5,

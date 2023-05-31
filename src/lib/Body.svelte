@@ -63,7 +63,7 @@
 				<h2 class="sub-hed">
 					<a href="https://www.theatlantic.com/"> The Atlantic </a>
 					<span class="job-desc"
-						>Senior Software Engineer, Reader Experience <br />(Nov. 2019 — Sept. 2022)</span
+						>Senior Software Engineer, Reader Experience <br />(Nov. 2019 — Sept. 2022)</span
 					>
 				</h2>
 				<div class="guff">
@@ -110,7 +110,7 @@
 			<div class="top col-2-12">
 				<h2 class="sub-hed">
 					<a href="https://www.axios.com/"> Axios </a>
-					<span class="job-desc">Senior Developer, News Products <br />(Jan. 2017 — Oct. 2019)</span
+					<span class="job-desc">Senior Developer, News Products <br />(Jan. 2017 — Oct. 2019)</span
 					>
 				</h2>
 				<div class="guff">
@@ -153,7 +153,7 @@
 			<div class="top col-2-12">
 				<h2 class="sub-hed">
 					<a href="https://www.vocativ.com/"> Vocativ </a>
-					<span class="job-desc">Interactive Producer <br />(Jun. 2015 — Nov. 2016)</span>
+					<span class="job-desc">Interactive Producer <br />(Jun. 2015 — Nov. 2016)</span>
 				</h2>
 				<div class="guff">
 					Produced data analyses and data visualizations for one to two stories every week, as well
@@ -458,9 +458,9 @@
 		transition: color 0.15s ease-in;
 	}
 
-  h1#hed {
-    font-weight: 300;
-  }
+	h1#hed {
+		font-weight: 300;
+	}
 
 	[class*='col-'] {
 		float: left;
