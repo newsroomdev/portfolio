@@ -13,10 +13,6 @@
 		rel="stylesheet"
 		href="https://s3.us-west-2.amazonaws.com/projects.geraldri.ch/css/bootstrap.min.css"
 	/>
-	<link
-		rel="stylesheet"
-		href="https://s3.us-west-2.amazonaws.com/projects.geraldri.ch/css/bootstrap-responsive.min.css"
-	/>
 	<meta name="description" content={description} />
 	<meta name="keywords" content={keywords} />
 	<meta name="author" content={author} />

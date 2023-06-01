@@ -4,84 +4,64 @@
 
 	onMount(() => {
 		const jq = window.$;
-		var isMobile = {
-			Android: function () {
-				return navigator.userAgent.match(/Android/i);
-			},
-			BlackBerry: function () {
-				return navigator.userAgent.match(/BlackBerry/i);
-			},
-			iOS: function () {
-				return navigator.userAgent.match(/iPhone|iPod/i);
-			},
-			Opera: function () {
-				return navigator.userAgent.match(/Opera Mini/i);
-			},
-			Windows: function () {
-				return navigator.userAgent.match(/IEMobile/i);
-			},
-			any: function () {
-				return (
-					isMobile.Android() ||
-					isMobile.BlackBerry() ||
-					isMobile.iOS() ||
-					isMobile.Opera() ||
-					isMobile.Windows()
-				);
-			}
+		const isMobile = {
+			Android: () => navigator.userAgent.match(/Android/i),
+			BlackBerry: () => navigator.userAgent.match(/BlackBerry/i),
+			iOS: () => navigator.userAgent.match(/iPhone|iPod/i),
+			Opera: () => navigator.userAgent.match(/Opera Mini/i),
+			Windows: () => navigator.userAgent.match(/IEMobile/i),
+			any: () =>
+				isMobile.Android() ||
+				isMobile.BlackBerry() ||
+				isMobile.iOS() ||
+				isMobile.Opera() ||
+				isMobile.Windows()
 		};
 
 		// opacity change on scroll
-
-		function isScrolledIntoView(elem: Element) {
-			var docViewTop = jq(window).scrollTop();
-			var docViewBottom = docViewTop + jq(window).height();
-
-			var elemTop = jq(elem).offset()?.top || 0;
-			var elemBottom = elemTop + jq(elem).height();
-
+		const isScrolledIntoView = (elem: Element) => {
+			const docViewTop = jq(window).scrollTop();
+			const docViewBottom = docViewTop + jq(window).height();
+			const elemTop = jq(elem).offset()?.top || 0;
+			const elemBottom = elemTop + jq(elem).height();
 			return elemBottom <= docViewBottom && elemTop >= docViewTop;
-		}
+		};
 
-		function chngeOpacity() {
+		function changeOpacity() {
 			jq('div.item').each((_, elem) => {
-				var img = jq(elem);
-				if (isScrolledIntoView(elem)) {
-					img.css('opacity', '1.0');
-				} else {
-					img.css('opacity', '0.3');
-				}
+				const $img = jq(elem);
+				$img.css('opacity', isScrolledIntoView(elem) ? '1.0' : '0.3');
 			});
 		}
 
-		jq(function () {
+		jq(() => {
 			if (!isMobile.any() && window.innerWidth >= 640) {
-				chngeOpacity();
-				jq(window).scroll(chngeOpacity);
+				changeOpacity();
+				jq(window).scroll(changeOpacity);
 			} else {
-				var $imgs = jq('img');
-				var first_imgs = $imgs.slice(0, 6);
-				jq(first_imgs).each((_, elem) => {
-					var img = jq(elem);
-					var ext = img.attr('src').endsWith('jpg') ? '.jpg' : '.png';
-					var root = img.attr('src').split(ext);
-					img.attr('src', `${root[0]}_s${ext}`);
+				const $imgs = jq('img');
+				const firstImgs = $imgs.slice(0, 6);
+				firstImgs.each((_, elem) => {
+					const $img = jq(elem);
+					const ext = $img.attr('src').endsWith('jpg') ? '.jpg' : '.png';
+					const root = $img.attr('src').split(ext);
+					$img.attr('src', `${root[0]}_s${ext}`);
 				});
-				var lazied_imgs = $imgs.slice(6);
-				jq(lazied_imgs).each((_, elem) => {
-					var img = jq(elem);
-					if (img.attr('data-src')) {
-						var ext = img.attr('data-src').endsWith('jpg') ? '.jpg' : '.png';
-						var root = img.attr('data-src').split(ext);
-						img.attr('data-src', `${root[0]}_s${ext}`);
+				const laziedImgs = $imgs.slice(6);
+				laziedImgs.each((_, elem) => {
+					const $img = jq(elem);
+					if ($img.attr('data-src')) {
+						const ext = $img.attr('data-src').endsWith('jpg') ? '.jpg' : '.png';
+						const root = $img.attr('data-src').split(ext);
+						$img.attr('data-src', `${root[0]}_s${ext}`);
 					}
 				});
 			}
 			jq('img').unveil();
 
-			const hedElem = document.getElementById('page-headr');
-			if (hedElem) {
-				const header = new Headroom(hedElem, {
+			const headerElem = document.getElementById('page-header');
+			if (headerElem) {
+				const header = new Headroom(headerElem, {
 					tolerance: 5,
 					offset: 205,
 					classes: {

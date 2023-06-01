@@ -7,7 +7,7 @@
 			>
 		</div>
 		<div class="col-1-3 sub-nav">
-			<a href="http://projects.geraldri.ch/portfolio">Portfolio</a>
+			<a href="http://projects.geraldri.ch/">Projects</a>
 		</div>
 	</div>
 	<div class="page-body">
@@ -434,7 +434,7 @@
 	</div>
 </div>
 
-<style>
+<style lang="scss">
 	:global(*),
 	:global(*::after),
 	:global(*::before) {
@@ -458,8 +458,8 @@
 		transition: color 0.15s ease-in;
 	}
 
-	h1#hed {
-		font-weight: 300;
+	h1 {
+		font-weight: unset;
 	}
 
 	[class*='col-'] {
@@ -472,12 +472,11 @@
 		margin: 0 auto;
 		overflow: hidden;
 		margin-top: 4em;
-	}
-
-	.grid::after {
-		content: '';
-		display: table;
-		clear: both;
+		&::after {
+			content: '';
+			display: table;
+			clear: both;
+		}
 	}
 
 	.grid-pad {
@@ -501,11 +500,10 @@
 	a {
 		color: #08c;
 		text-decoration: none;
-	}
-
-	a:hover {
-		color: #069;
-		text-decoration: none;
+		&:hover {
+			color: #069;
+			text-decoration: none;
+		}
 	}
 
 	img {
@@ -513,11 +511,10 @@
 		float: left;
 		width: 100%;
 		max-width: 420px;
-	}
-
-	img:hover {
-		opacity: 0.6;
-		filter: opacity(60%);
+		&:hover {
+			opacity: 0.6;
+			filter: opacity(60%);
+		}
 	}
 
 	div#page-headr {
@@ -541,6 +538,14 @@
 		font-size: 1.5em;
 		line-height: 2;
 		font-weight: 100;
+	}
+
+	h1#hed {
+		font-weight: 300;
+		font-size: 2.5em;
+		line-height: 1.2;
+		letter-spacing: 0.7px;
+		padding-right: 3em;
 	}
 
 	h2.sub-hed {
@@ -577,42 +582,40 @@
 		display: table;
 		margin-bottom: 5em;
 		transition: opacity 0.7s ease-in-out;
-	}
-
-	div.item:first-child {
-		margin-top: 2.5em;
+		&:first-child {
+			margin-top: 2.5em;
+		}
 	}
 
 	div.sub-item {
 		text-align: center;
+
+		& p {
+			font-family: sans-serif;
+			color: gray;
+			font-size: 0.9em;
+			line-height: 1.2;
+			text-align: left;
+
+			&:first-child {
+				font-weight: 600;
+			}
+
+			&:last-child {
+				padding-right: 0.75em;
+			}
+		}
+
+		& img {
+			transition-property: opacity, left, top, height;
+			transition-duration: 0.5s, 2s;
+		}
 	}
 
 	div.sub-desc {
 		height: 100px;
 		margin-bottom: 10px;
 	}
-
-	div.sub-item p {
-		font-family: sans-serif;
-		color: gray;
-		font-size: 0.9em;
-		line-height: 1.2;
-		text-align: left;
-	}
-
-	div.sub-item p:first-child {
-		font-weight: 600;
-	}
-
-	div.sub-item p:last-child {
-		padding-right: 0.75em;
-	}
-
-	.sub-item img {
-		transition-property: opacity, left, top, height;
-		transition-duration: 0.5s, 2s;
-	}
-
 	.animated {
 		animation-duration: 0.5s;
 		animation-fill-mode: both;
@@ -646,7 +649,7 @@
 		animation-name: slide-up;
 	}
 
-	@media handheld, only screen and (width <= 1100px) {
+	@media (width <= 1100px) {
 		.grid {
 			width: 100%;
 			min-width: 0;
@@ -670,6 +673,7 @@
 			float: left;
 		}
 
+		h1#hed,
 		div.sub-nav {
 			width: 33%;
 			float: left;
@@ -684,19 +688,20 @@
 		}
 	}
 
-	@media handheld, only screen and (width <= 900px) {
+	@media (width <= 900px) {
 		div.grid {
 			width: 95%;
 			margin-top: 2.5em;
 		}
 	}
 
-	@media handheld, only screen and (width <= 640px) {
+	@media (width <= 640px) {
 		div#page-headr {
 			margin-bottom: 0;
 			padding: 0;
 		}
 
+		h1#hed,
 		div.sub-nav {
 			width: 35%;
 			float: left;
@@ -731,7 +736,14 @@
 		}
 	}
 
-	@media handheld, only screen and (width <= 400px) {
+	@media (width <= 400px) {
+		h1#hed {
+			width: 70%;
+			font-size: 1.9em;
+			padding: 0;
+			padding-left: 0.75em;
+			text-align: left;
+		}
 		div.grid {
 			margin-top: 2em;
 		}
@@ -741,6 +753,7 @@
 		}
 
 		div#resume {
+			display: block;
 			float: right;
 			line-height: 2;
 			font-size: 1em;
