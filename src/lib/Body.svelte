@@ -1,3 +1,7 @@
+<script>
+	import { base } from '$app/paths';
+</script>
+
 <div class="grid grid-pad">
 	<div id="page-headr" class="animated slide-down headroom--top">
 		<h1 class="col-1-3" id="hed">Gerald Rich</h1>
@@ -305,7 +309,7 @@
 		<div class="item">
 			<div class="top col-2-12">
 				<h2 class="sub-hed">
-					<a href="/"> Mapbox </a>
+					<a href="{base}/"> Mapbox </a>
 					<span class="job-desc">Data Analyst <br />(Oct. 2013 — Feb. 2014)</span>
 				</h2>
 				<div class="guff">
@@ -319,7 +323,7 @@
 				<div class="sub-desc">
 					<p>FourSquare (developer)</p>
 				</div>
-				<a rel="noopener" href="/">
+				<a rel="noopener" href="{base}/">
 					<img
 						loading="lazy"
 						alt=""
