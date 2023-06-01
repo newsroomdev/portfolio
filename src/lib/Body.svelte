@@ -6,12 +6,10 @@
 	<div id="page-headr" class="animated slide-down headroom--top">
 		<h1 class="col-1-3" id="hed">Gerald Rich</h1>
 		<div class="col-1-3 sub-nav" id="resume">
-			<a target="_blank" rel="noopener" href="http://projects.geraldri.ch/GeraldRichResume.pdf"
-				>Resume</a
-			>
+			<a target="_blank" rel="noopener" href="{base}/GeraldRichResume.pdf">Resume</a>
 		</div>
 		<div class="col-1-3 sub-nav">
-			<a href="http://projects.geraldri.ch/">Projects</a>
+			<a href="https://www.linkedin.com/in/geraldrich/">LinkedIn</a>
 		</div>
 	</div>
 	<div class="page-body">
