@@ -1,5 +1,6 @@
 <script>
 	import { base } from '$app/paths';
+	import 'lazysizes';
 </script>
 
 <div class="grid grid-pad">
@@ -85,9 +86,11 @@
 				</div>
 				<a rel="noopener" href="https://www.theatlantic.com/books/">
 					<img
+						class="lazyload"
 						loading="lazy"
 						alt=""
-						src="https://s3.us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/family-separation-atl.png"
+						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+						data-src="https://s3.us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/family-separation-atl.png"
 					/>
 				</a>
 			</div>
@@ -101,9 +104,11 @@
 				</div>
 				<a rel="noopener" href="https://www.theatlantic.com/shadowland/">
 					<img
+						class="lazyload"
 						loading="lazy"
 						alt=""
-						src="https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/atl_shadowland.jpg"
+						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+						data-src="https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/atl_shadowland.jpg"
 					/>
 				</a>
 			</div>
@@ -128,9 +133,11 @@
 				</div>
 				<a rel="noopener" href="http://www.alexislloyd.com/projects/eden.html">
 					<img
+						class="lazyload"
 						loading="lazy"
 						alt=""
-						src="https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/axios_eden.png"
+						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+						data-src="https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/axios_eden.png"
 					/>
 				</a>
 			</div>
@@ -144,9 +151,11 @@
 				</div>
 				<a rel="noopener" href="https://www.axios.com/tag/2018-midterm-elections">
 					<img
+						class="lazyload"
 						loading="lazy"
 						alt=""
-						src="https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/axios_2018_elections.png"
+						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+						data-src="https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/axios_2018_elections.png"
 					/>
 				</a>
 			</div>
@@ -179,9 +188,11 @@
 				</div>
 				<a rel="noopener" href="http://dataproofer.org">
 					<img
+						class="lazyload"
 						loading="lazy"
 						alt=""
-						src="https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/vocativ_dataproofer.jpg"
+						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+						data-src="https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/vocativ_dataproofer.jpg"
 					/>
 				</a>
 			</div>
@@ -192,9 +203,11 @@
 				</div>
 				<a rel="noopener" href="http://vocativ.com/interactives/deathday/">
 					<img
+						class="lazyload"
 						loading="lazy"
 						alt=""
-						src="https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/vocativ_death_day.jpg"
+						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
+						data-src="https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/vocativ_death_day.jpg"
 					/>
 				</a>
 			</div>
@@ -225,6 +238,7 @@
 					href="https://www.themarshallproject.org/2014/12/23/shifting-away-from-solitary"
 				>
 					<img
+						class="lazyload"
 						loading="lazy"
 						alt=""
 						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
@@ -239,6 +253,7 @@
 				</div>
 				<a rel="noopener" href="https://www.themarshallproject.org/2015/01/16/a-pirate-s-booty">
 					<img
+						class="lazyload"
 						loading="lazy"
 						alt=""
 						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
@@ -276,6 +291,7 @@
 					href="http://www.propublica.org/article/where-are-the-low-cost-cancer-treatments"
 				>
 					<img
+						class="lazyload"
 						loading="lazy"
 						alt=""
 						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
@@ -296,6 +312,7 @@
 					href="http://www.propublica.org/article/for-a-respected-prosecutor-an-unpardonable-failure"
 				>
 					<img
+						class="lazyload"
 						loading="lazy"
 						alt=""
 						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
@@ -323,6 +340,7 @@
 				</div>
 				<a rel="noopener" href="{base}/">
 					<img
+						class="lazyload"
 						loading="lazy"
 						alt=""
 						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
@@ -336,6 +354,7 @@
 				</div>
 				<a rel="noopener" href="https://www.mapbox.com/labs/mozilla/">
 					<img
+						class="lazyload"
 						loading="lazy"
 						alt=""
 						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
@@ -365,6 +384,7 @@
 				</div>
 				<a rel="noopener" href="http://apps.npr.org/playgrounds/">
 					<img
+						class="lazyload"
 						loading="lazy"
 						alt=""
 						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
@@ -376,6 +396,7 @@
 				<div class="sub-desc" />
 				<a rel="noopener" href="http://apps.npr.org/playgrounds/">
 					<img
+						class="lazyload"
 						loading="lazy"
 						alt=""
 						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
@@ -406,6 +427,7 @@
 					href="https://www.flickr.com/photos/geraldrich/8712840424/in/set-72157633389643051"
 				>
 					<img
+						class="lazyload"
 						loading="lazy"
 						alt=""
 						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"
@@ -425,6 +447,7 @@
 					href="http://app1.kuhf.org/articles/1362754366-Driving-Demand-for-Personal-Protection.html"
 				>
 					<img
+						class="lazyload"
 						loading="lazy"
 						alt=""
 						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC"

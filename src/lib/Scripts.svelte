@@ -57,7 +57,6 @@
 					}
 				});
 			}
-			jq('img').unveil();
 
 			const headerElem = document.getElementById('page-header');
 			if (headerElem) {
