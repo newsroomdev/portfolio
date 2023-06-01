@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let title = "Gerald Rich's Portfolio";
-	export let description = "Check out my portfolio and see what I've worked on.";
+	export let description = "A few things I've worked on.";
 	export let keywords = 'portfolio, web development, front end, developer';
 	export let author = 'Gerald Rich';
 	export let image = 'https://example.com/image.png';
