@@ -20,8 +20,8 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-          yarn install --frozen-lockfile
-          yarn build
+          npm ci
+          npm run build
 
       - name: Upload artifact ⤴
         uses: actions/upload-pages-artifact@v1
