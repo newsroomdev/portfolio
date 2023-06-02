@@ -1,10 +1,33 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+	import type { Person, WithContext } from 'schema-dts';
+
 	export let title = "Gerald Rich's Portfolio";
 	export let description = "A few things I've worked on.";
-	export let keywords = 'portfolio, web development, front end, developer';
+	export let keywords = 'portfolio, web development, front end, developer, journalism';
 	export let author = 'Gerald Rich';
-	export let image = 'https://example.com/image.png';
-	export let url = 'http://projects.geraldri.ch/portfolio/index.html';
+	export let url = base;
+
+	const schemaObj: WithContext<Person> = {
+		'@context': 'https://schema.org',
+		'@type': 'Person',
+		name: '{author}',
+		url: '{url}',
+		sameAs: [
+			'https://www.linkedin.com/in/geraldrich/',
+			'https://github.com/newsroomdev/',
+			'https://twitter.com/newsroomdev/'
+		],
+		hasOccupation: {
+			'@type': 'Occupation',
+			name: 'Interactive News Editor, AP'
+		}
+	};
+	const jsonLD = `
+    <script type="application/ld+json">
+      ${JSON.stringify(schemaObj)}
+    ${'<'}/script>
+  `;
 </script>
 
 <svelte:head>
@@ -19,30 +42,10 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content={title} />
 	<meta property="og:description" content={description} />
-	<meta property="og:image" content={image} />
 	<meta property="og:url" content={url} />
-	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
-	<meta name="twitter:image" content={image} />
 	<meta name="twitter:url" content={url} />
-	<script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "{author}",
-      "url": "{url}",
-      "sameAs": [
-        "https://www.linkedin.com/in/geraldrich/",
-        "https://github.com/newsroomdev/",
-        "https://twitter.com/newsroomdev/"
-      ],
-      "image": {
-        "@type": "ImageObject",
-        "url": "{image}",
-        "height": "800",
-        "width": "800"
-      }
-    }
-	</script>
+	{@html jsonLD}
 </svelte:head>
