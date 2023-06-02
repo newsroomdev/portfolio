@@ -21,7 +21,7 @@
 					<span class="job-desc">Interactive News Editor <br />(Sept. 2022 - Present)</span>
 				</h2>
 				<div class="guff">
-					Expanded a team of developers and designers to nearly a dozen direct reports, implemented
+					Expanded a team of developers and designers, implemented
 					two-week sprint cycles and Agile ceremonies, and mentored creative engineers.
 				</div>
 			</div>
