@@ -51,7 +51,7 @@
 				</div>
 				<a
 					rel="noopener"
-					href="https://apnews.com/article/covid-school-enrollment-missing-kids-homeschool-b6c9017f603c00466b9e9908c5f2183a"
+					href="https://projects.apnews.com/features/2023/missing-children/index.html"
 				>
 					<img
 						loading="eager"
