@@ -12,6 +12,7 @@ vite.config.ts.timestamp-*
 
 # Tests
 /test-results/
+/playwright-report/
 
 # Local .terraform directories
 **/.terraform/*
