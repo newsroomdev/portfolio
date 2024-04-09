@@ -25,7 +25,7 @@ jobs:
             ${{ runner.os }}-playwright-
       - name: Install Playwright browsers
         if: steps.cache-playwright.outputs.cache-hit != 'true'
-        run: pnpx playwright install --with-deps
+        run: pnpm dlx playwright install --with-deps
       - name: Run Tests 🧪
         run: pnpm test
       - name: Upload test artifact ⤴
