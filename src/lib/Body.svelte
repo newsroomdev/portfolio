@@ -7,7 +7,7 @@
 	<div id="page-headr" class="animated slide-down headroom--top">
 		<h1 class="col-1-3" id="hed">Gerald Rich</h1>
 		<div class="col-1-3 sub-nav" id="resume">
-			<a target="_blank" rel="noopener" href="{base}/GeraldRichResume.pdf">Resume</a>
+			<a target="_blank" rel="noopener" href="{base}/GeraldRichResume.pdf">Résumé</a>
 		</div>
 		<div class="col-1-3 sub-nav">
 			<a href="https://www.linkedin.com/in/geraldrich/">LinkedIn</a>
@@ -18,11 +18,11 @@
 			<div class="top col-2-12">
 				<h2 class="sub-hed">
 					<a href="https://projects.apnews.com/"> Associated Press </a>
-					<span class="job-desc">Interactive News Editor <br />(Sept. 2022 - Present)</span>
+					<span class="job-desc">Interactive News Editor <br />(Sept. 2022 - Feb. 2024)</span>
 				</h2>
 				<div class="guff">
-					Expanded a team of developers and designers, implemented
-					two-week sprint cycles and Agile ceremonies, and mentored creative engineers.
+					Expanded a team of developers and designers, implemented two-week sprint cycles and Agile
+					ceremonies, and mentored creative engineers.
 				</div>
 			</div>
 			<div class="col-5-12 sub-item">
@@ -784,7 +784,6 @@
 			font-size: 1em;
 			font-weight: 600;
 			text-align: center;
-			background: lightgray;
 			margin-right: 14px;
 			padding-right: 0;
 		}
