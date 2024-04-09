@@ -32,8 +32,8 @@ devDependencies:
     specifier: ^3.0.2
     version: 3.0.2(svelte@4.2.12)(vite@5.2.8)
   '@types/headroom.js':
-    specifier: ^0.12.2
-    version: 0.12.2
+    specifier: ^0.12.4
+    version: 0.12.4
   '@types/jquery':
     specifier: ^1.10.39
     version: 1.10.39
@@ -646,8 +646,8 @@ packages:
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
     dev: true
 
-  /@types/headroom.js@0.12.2:
-    resolution: {integrity: sha512-dsor/R8cScrFMYfOeZHvRzemQdorA02OBS2ROVPkpCzMovsiws96mMIxOtGpFgme9QrL7zOOBfRosg6lHwg2vg==}
+  /@types/headroom.js@0.12.4:
+    resolution: {integrity: sha512-9Z6GHzjkq/MToVC0PNoiTMbeDZjjjKv6SCxv1XonspR7ssohjNb0+bg7K6Fbz5hDh/aFT9qLfhRa3jYYs4aMuQ==}
     dev: true
 
   /@types/jquery@1.10.39:
