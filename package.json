@@ -17,6 +17,7 @@
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/adapter-static": "^2.0.3",
 		"@sveltejs/kit": "^2.5.5",
+		"@sveltejs/vite-plugin-svelte": "^3.0.2",
 		"@types/headroom.js": "^0.12.2",
 		"@types/jquery": "^1.10.39",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",

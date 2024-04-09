@@ -28,6 +28,9 @@ devDependencies:
   '@sveltejs/kit':
     specifier: ^2.5.5
     version: 2.5.5(@sveltejs/vite-plugin-svelte@3.0.2)(svelte@3.59.1)(vite@4.5.3)
+  '@sveltejs/vite-plugin-svelte':
+    specifier: ^3.0.2
+    version: 3.0.2(svelte@3.59.1)(vite@4.5.3)
   '@types/headroom.js':
     specifier: ^0.12.2
     version: 0.12.2
