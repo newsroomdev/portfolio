@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run Tests 🧪
-        uses: docker://mcr.microsoft.com/playwright:v1.34.3-jammy
+        uses: docker://mcr.microsoft.com/playwright:v1.43.0-jammy
         with:
           args: npx playwright test
       - name: Upload test artifact ⤴
