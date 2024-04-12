@@ -10,6 +10,8 @@
 </div>
 
 <style lang="scss">
+	@import '../lib/styles/variables';
+
 	:global(html, body) {
 		margin: 0;
 		font-size: 16px;
@@ -20,5 +22,9 @@
 		display: flex;
 		flex-direction: column;
 		margin: 0 1rem;
+
+		@media (min-width: $breakpoint-lg) {
+			margin: 0 2.5rem;
+		}
 	}
 </style>

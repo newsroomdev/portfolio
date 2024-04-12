@@ -65,7 +65,11 @@
 		transition: font-size 0.3s ease; /* transition effect */
 
 		&.scrolled {
-			font-size: 1.1rem; /* font size when scrolled */
+			font-size: 1.1rem;
+
+			@media (min-width: $breakpoint-lg) {
+				font-size: 1.2rem;
+			} /* font size when scrolled */
 		}
 
 		@media (min-width: $breakpoint-mobile-md) {
@@ -84,13 +88,25 @@
 
 		&.scrolled {
 			font-size: 0.85rem;
+
+			@media (min-width: $breakpoint-lg) {
+				font-size: 0.9rem;
+			}
 		}
 
 		&#resume {
 			margin-right: 0;
 
 			@media (min-width: $breakpoint-mobile-md) {
-				margin-right: 1px;
+				margin-right: 0.2rem;
+			}
+
+			@media (min-width: $breakpoint-md) {
+				margin-right: 0.5rem;
+			}
+
+			@media (min-width: $breakpoint-lg) {
+				margin-right: 1rem;
 			}
 		}
 	}
