@@ -16,7 +16,9 @@
 					{title}
 				{/if}
 			</span>
-			{role && `(${role})`}
+			{#if role}
+				<span class="role">({role})</span>
+			{/if}
 		</SansSerif>
 	</h4>
 	{#if link}
@@ -51,6 +53,7 @@
 
 		h4 {
 			font-size: 1rem;
+
 			@media (min-width: $breakpoint-md) {
 				text-align: center;
 			}
@@ -58,7 +61,13 @@
 			@media (min-width: $breakpoint-lg) {
 				text-align: left;
 			}
+
+			.role {
+				font-weight: 200;
+				font-size: 0.9rem;
+			}
 		}
+
 		p {
 			font-size: 0.75rem;
 		}

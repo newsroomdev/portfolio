@@ -137,14 +137,14 @@
 			{
 				"title": "Shifting Away from Solitary",
 				"role": "reporter/developer",
-				"desc": "More states have passed solitary confinement reforms in 2014 than in the past 16 years.",
+				"desc": "More states have passed solitary confinement reforms in 2014 than in the past 16 years. Created SVG elements that I animatd with a JS timer function to help visually tell the story",
 				"img": "https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/tmp-solitary.jpg",
 				"link": "https://www.themarshallproject.org/2015/05/08/shifting-away-from-solitary"
 			},
 			{
 				"title": "A Pirate's Booty",
 				"role": "reporter",
-				"desc": "The Feds acquire a confusing asset: Bitcoin.",
+				"desc": "The Feds acquire a confusing asset: Bitcoin. I used R to find the story of a complex asset seizure and created a custom graphic to accompany as I did the reporting.",
 				"img": "https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/tmp-bitcoin.jpg",
 				"link": "https://www.themarshallproject.org/2015/05/08/a-pirate-s-booty"
 			}
