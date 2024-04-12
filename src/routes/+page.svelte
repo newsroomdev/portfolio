@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Head from '$lib/Head.svelte';
 	import Body from '$lib/Body.svelte';
-	import '../global.scss';
+	import '$lib/styles/global.scss';
 </script>
 
 <div class="wrapper">

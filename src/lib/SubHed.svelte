@@ -6,7 +6,7 @@
 	const { orgTitle, jobTitle, dates, guff, skills, link } = hed;
 </script>
 
-<div>
+<div class="sub-hed">
 	<h2 class="h2">
 		<SansSerif weight={400}>
 			<a href={link}>{orgTitle}</a>
@@ -30,8 +30,10 @@
 </div>
 
 <style lang="scss">
+	@import './styles/variables';
 	.h2 {
 		font-size: 1.25rem;
+		margin-top: 1em;
 	}
 
 	.job-desc {
@@ -45,5 +47,11 @@
 
 	.description {
 		margin: 0.5rem 0;
+	}
+
+	@media (min-width: $breakpoint-xl) {
+		.sub-hed {
+			max-width: $breakpoint-mobile-md;
+		}
 	}
 </style>

@@ -13,8 +13,14 @@
 </div>
 
 <style lang="scss">
+	@import './styles/variables';
+
 	.rows {
 		max-width: 1140px;
 		margin: 0 0.25rem;
+
+		@media (min-width: $breakpoint-lg) {
+			margin: 0 auto;
+		}
 	}
 </style>

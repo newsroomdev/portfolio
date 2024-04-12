@@ -44,7 +44,9 @@
 </nav>
 
 <style lang="scss">
-	nav#page-headr {
+	@import './styles/variables';
+
+	#page-headr {
 		position: sticky;
 		top: 0;
 		display: flex;
@@ -59,11 +61,19 @@
 	}
 
 	#hed {
-		font-size: 2rem; /* initial font size */
+		font-size: 1.6rem; /* initial font size */
 		transition: font-size 0.3s ease; /* transition effect */
 
 		&.scrolled {
-			font-size: 1.15rem; /* font size when scrolled */
+			font-size: 1.1rem; /* font size when scrolled */
+		}
+
+		@media (min-width: $breakpoint-mobile-md) {
+			font-size: 1.8rem; /* initial font size */
+		}
+
+		@media (min-width: $breakpoint-mobile-lg) {
+			font-size: 2rem;
 		}
 	}
 
@@ -77,7 +87,11 @@
 		}
 
 		&#resume {
-			margin: 0 0.2rem;
+			margin-right: 0;
+
+			@media (min-width: $breakpoint-mobile-md) {
+				margin-right: 1px;
+			}
 		}
 	}
 

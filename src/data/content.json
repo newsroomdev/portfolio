@@ -5,7 +5,7 @@
 			"jobTitle": "Interactive News Editor",
 			"link": "https://projects.apnews.com/",
 			"dates": "Sept. 2022 — Feb. 2024",
-			"guff": "Expanded a team of developers and designers, implemented two-week sprint cycles and Agile ceremonies, and mentored creative engineers.",
+			"guff": "Doubled an incredible team of developers and designers, implemented two-week sprint cycles and Agile ceremonies, and mentored creative engineers make engaging features for longform and live event journalism.",
 			"skills": [
 				"Code & Story Editing",
 				"Technical Strategy",
@@ -111,7 +111,7 @@
 		},
 		"projects": [
 			{
-				"title": "DataProofer (lead developer) A downloadable desktop (Windows, Mac OS X, Linux) and command line application for proofreading spreadsheets funded in part by the Knight Foundation.",
+				"title": "DataProofer",
 				"role": "lead developer",
 				"desc": "A downloadable command line app and desktop app (deprecated) for proofreading spreadsheets funded in part by the Knight Foundation.",
 				"img": "https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/vocativ_dataproofer.jpg"
