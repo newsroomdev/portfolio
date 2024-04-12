@@ -53,14 +53,14 @@
 			{
 				"title": "\"The Secret History of Family Separation\"",
 				"role": "senior developer",
-				"desc": "Worked closely with developers, designers, art directors, and editors to produce the Pulitzer-winning story in English and Spanish.",
+				"desc": "Worked closely with developers, designers, art directors, and editors to produce the Pulitzer-winning story in English and Spanish by ensuring the custom Next.js code was responsive and performant.",
 				"img": "https://s3.us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/family-separation-atl.png",
 				"link": "https://www.theatlantic.com/magazine/archive/2022/09/trump-administration-family-separation-policy-immigration/670604/"
 			},
 			{
 				"title": "Shadowland",
 				"role": "lead developer",
-				"desc": "An interactive hub for digital and print stories about conspiracy theories in America featuring canvas animations and a secret 3D timeline.",
+				"desc": "An interactive hub built in Svelte for digital and print stories about conspiracy theories in America featuring canvas animations and a secret 3D timeline.",
 				"link": "https://www.theatlantic.com/shadowland/",
 				"img": "https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/atl_shadowland.jpg"
 			}
@@ -72,7 +72,7 @@
 			"link": "https://www.axios.com/results?q=%22gerald%20rich%22&sort=1",
 			"jobTitle": "News Products Senior Developer",
 			"dates": "Jan. 2017 — Oct. 2019",
-			"guff": "Constructed CMS features and API endpoints to embed interactive graphics. Built Axios' first election graphics framework and maintained election microservices.",
+			"guff": "As the first full-time engineer hired, I constructed CMS features and API endpoints to embed interactive graphics. Built Axios' first election graphics framework and maintained election microservices.",
 			"skills": [
 				"React",
 				"Next.js",
@@ -88,14 +88,14 @@
 			{
 				"title": "Eden",
 				"role": "developer",
-				"desc": "A CMS designed for efficiency and made with empathy for visual journalists.",
+				"desc": "A CMS designed for efficiency and made with empathy for visual journalists that integrated with with the Django Rest API using OEmbed and GraphQL.",
 				"img": "https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/axios_eden.png",
 				"link": "http://www.alexislloyd.com/projects/eden.html"
 			},
 			{
 				"title": "2018 Midterm Elections",
 				"role": "developer",
-				"desc": "Developed microservices (data fetcher, automated screenshots) for dozens of live primary and election results embeds and synchronized updating graphics on Apple News",
+				"desc": "Developed microservices (data fetcher & automated screenshots) using AWS Lambda for dozens of live primary and election results embeds and synchronized updating graphics on Apple News",
 				"img": "https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/axios_2018_elections.png",
 				"link": "https://www.axios.com/2018/11/06/live-map-axios-2018-midterm-elections-results"
 			}
@@ -130,7 +130,7 @@
 			"jobTitle": "Interactive Reporter",
 			"dates": "Sept. 2014 — May 2015",
 			"link": "https://www.themarshallproject.org/search?q=%22gerald+rich%22",
-			"guff": "Programmed biweekly interactive graphics about the criminal justice system, as well as reported on and researched digital crime. While I was there I gathered gigabytes of data, and developed contacts within the system — researchers, lawyers, advocates, and government officials.",
+			"guff": "Programmed biweekly interactive graphics about the criminal justice system, as well as reported on and researched digital crime. While I was there I gathered gigabytes of data, and developed contacts within the system: researchers, lawyers, advocates, and government officials.",
 			"skills": ["D3", "CSS", "R", "Pitching & Reporting"]
 		},
 		"projects": [
@@ -160,18 +160,18 @@
 		},
 		"projects": [
 			{
-				"title": "The Military is Leaving the Missing Behind",
-				"desc": "TKTK how i researched imagery",
-				"role": "producer",
-				"img": "https://static.propublica.org/images/mia-leadphoto.JPG",
-				"link": "https://www.propublica.org/article/missing-in-action-us-military-slow-to-identify-service-members"
-			},
-			{
 				"title": "For a Respected Prosecutor, an Unpardonable Failure",
-				"desc": "TKTK how i placed imagery",
+				"desc": "Created a custom article using a few reporting images to help tell the story of a prosecutor convicted an innocent man.",
 				"role": "producer",
 				"img": "https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/pp_brooklyn_prosecutor.jpg",
 				"link": "http://www.propublica.org/article/for-a-respected-prosecutor-an-unpardonable-failure"
+			},
+			{
+				"title": "The Military is Leaving the Missing Behind",
+				"desc": "Coordinated with reporters and graphics developers to produce a custom feature article with interactive elements about the military's failure to give family's closure.",
+				"role": "producer",
+				"img": "https://static.propublica.org/images/mia-leadphoto.JPG",
+				"link": "https://www.propublica.org/article/missing-in-action-us-military-slow-to-identify-service-members"
 			}
 		]
 	},
@@ -186,14 +186,14 @@
 		"projects": [
 			{
 				"title": "Mozilla",
-				"role": "developer",
+				"role": "",
 				"desc": "Integrated web maps into Mozilla's Location Services, a project to provide geolocation lookups based on cell tower and WiFi access point information.",
 				"img": "https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/mapbox-mozilla.jpg",
 				"link": "https://blog.mapbox.com/mozilla-location-services-coverage-map-68cd6dd475a5"
 			},
 			{
 				"title": "FourSquare",
-				"role": "developer",
+				"role": "",
 				"desc": "Demonstrated how to use Mapbox.js to create custom branded maps with Foursquare data which later went on to become the official maps of FourSquare.",
 				"img": "https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/mapbox-foursquare.jpg"
 			}

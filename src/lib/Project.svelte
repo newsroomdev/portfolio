@@ -9,12 +9,14 @@
 <div class="sub-item">
 	<h4>
 		<SansSerif weight={400}>
-			{#if link}
-				<a class="title" href={link}>{title}</a>
-			{:else}
-				{title}
-			{/if}
-			<span>({role})</span>
+			<span style="font-style: italic">
+				{#if link}
+					<a class="title" href={link}>{title}</a>
+				{:else}
+					{title}
+				{/if}
+			</span>
+			{role && `(${role})`}
 		</SansSerif>
 	</h4>
 	{#if link}

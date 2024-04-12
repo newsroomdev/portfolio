@@ -13,9 +13,9 @@
 		</SansSerif>
 		<SansSerif>
 			<span class="job-desc">
-				{jobTitle}
+				<span class="job-title">{jobTitle}</span>
 				<br />
-				({dates})
+				<span class="dates">({dates})</span>
 			</span>
 		</SansSerif>
 	</h2>
