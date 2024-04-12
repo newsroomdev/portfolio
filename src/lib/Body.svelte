@@ -22,7 +22,7 @@
 <footer>
 	<Serif>
 		<p class="footer">
-			Created by Gerald Rich | <a href="https://github.com/newsroomdev/portfolio">View Source</a>
+			Created by Gerald Rich | <a href="https://github.com/newsroomdev/portfolio">Github Repo</a>
 		</p>
 	</Serif>
 </footer>
@@ -43,7 +43,7 @@
 	.footer {
 		width: 100%;
 		max-width: 1260px;
-		font-size: 0.85rem;
+		font-size: 0.75rem;
 		text-align: center;
 		margin: 2rem auto 1rem;
 		padding-top: 1rem;
