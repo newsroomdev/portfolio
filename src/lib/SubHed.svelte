@@ -51,6 +51,7 @@
 
 	@media (min-width: $breakpoint-xl) {
 		.sub-hed {
+			width: 100%;
 			max-width: $breakpoint-mobile-md;
 		}
 	}

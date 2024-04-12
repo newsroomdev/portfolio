@@ -7,9 +7,10 @@
 	export let row: Row;
 
 	const { hed, projects } = row;
+	const single = projects.length === 1;
 </script>
 
-<div class="row">
+<div class="row" class:single>
 	<SubHed {hed} />
 	<div>
 		<h3>
@@ -32,12 +33,18 @@
 	.projects {
 		display: flex;
 		flex-direction: column;
-		column-gap: 1rem;
+		column-gap: 1.5rem;
 		align-items: center;
 		justify-content: center;
 
 		@media (min-width: $breakpoint-md) {
 			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		@media (min-width: $breakpoint-lg) {
+			justify-content: start;
+			column-gap: 2rem;
 		}
 	}
 
@@ -46,6 +53,10 @@
 			display: flex;
 			justify-content: space-between;
 			column-gap: 5rem;
+		}
+
+		.single {
+			justify-content: start;
 		}
 	}
 </style>

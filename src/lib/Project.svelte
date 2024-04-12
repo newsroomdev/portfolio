@@ -38,6 +38,13 @@
 
 		@media (min-width: $breakpoint-md) {
 			width: 50%;
+			min-width: 300px;
+			margin: 0 auto;
+		}
+
+		@media (min-width: $breakpoint-xl) {
+			width: 100%;
+			max-width: $breakpoint-mobile-sm;
 		}
 
 		h4 {
