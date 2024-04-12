@@ -2,11 +2,14 @@
 	import Head from '$lib/Head.svelte';
 	import Body from '$lib/Body.svelte';
 	import '$lib/styles/global.scss';
+	import type { PageData } from './$types';
+
+	export let data: PageData;
 </script>
 
 <div class="wrapper">
 	<Head />
-	<Body />
+	<Body {data} />
 </div>
 
 <style lang="scss">

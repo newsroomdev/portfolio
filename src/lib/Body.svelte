@@ -3,7 +3,14 @@
 	import Nav from '$lib/Nav.svelte';
 	import Row from '$lib/Row.svelte';
 	import Serif from '$lib/Serif.svelte';
-	import content from '../data/content.json';
+	import type { PageData } from '../routes/$types';
+	import type { Contents } from './types';
+	export let data: PageData;
+
+	let content: Contents;
+	if (data.body && 'content' in data.body) {
+		content = data.body.content as Contents;
+	}
 </script>
 
 <Nav />
