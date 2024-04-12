@@ -1,0 +1,245 @@
+[
+	{
+		"hed": {
+			"orgTitle": "Associated Press",
+			"jobTitle": "Interactive News Editor",
+			"link": "https://projects.apnews.com/",
+			"dates": "Sept. 2022 — Feb. 2024",
+			"guff": "Expanded a team of developers and designers, implemented two-week sprint cycles and Agile ceremonies, and mentored creative engineers.",
+			"skills": [
+				"Code & Story Editing",
+				"Technical Strategy",
+				"Scrum",
+				"Core Web Vitals",
+				"Design Systems"
+			]
+		},
+		"projects": [
+			{
+				"title": "AP News 2022 Midterms",
+				"role": "editor",
+				"desc": "Triaged bugs, prioritized backlogs, and managed stakeholder expectations along with technical debt across the globe leading up to and throughout election night.",
+				"img": "https://s3.us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/2022-midterm-ap.png",
+				"link": "https://twitter.com/newsroomdev/status/1590383177088258048"
+			},
+			{
+				"title": "\"Thousands of kids are missing from school. Where did they go?\"",
+				"role": "editor",
+				"desc": "Coordinated with developers, researchers, and stakeholders to on a custom React presentation via Asana and leveraging design critiques and code reviews.",
+				"img": "https://s3.us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/missing-children-ap.png",
+				"link": "https://projects.apnews.com/features/2023/missing-children/index.html"
+			}
+		]
+	},
+	{
+		"hed": {
+			"orgTitle": "The Atlantic",
+			"link": "https://www.theatlantic.com/search/?tab=&q=%22gerald+rich%22&search-sort=relevance",
+			"jobTitle": "Senior Software Engineer, Reader Experience",
+			"dates": "Nov. 2019 — Sept. 2022",
+			"guff": "Created and collaborated on award-winning features, rebuilding the website, and published enterprise stories biannually, with a focus on media elements, accessibility, and performance.",
+			"skills": [
+				"TypeScript",
+				"Canvas",
+				"Next.js",
+				"Svelte",
+				"GraphQL",
+				"Django",
+				"SEO",
+				"Next-Gen Images & Video"
+			]
+		},
+		"projects": [
+			{
+				"title": "\"The Secret History of Family Separation\"",
+				"role": "senior developer",
+				"desc": "Worked closely with developers, designers, art directors, and editors to produce the Pulitzer-winning story in English and Spanish.",
+				"img": "https://s3.us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/family-separation-atl.png",
+				"link": "https://www.theatlantic.com/magazine/archive/2022/09/trump-administration-family-separation-policy-immigration/670604/"
+			},
+			{
+				"title": "Shadowland",
+				"role": "lead developer",
+				"desc": "An interactive hub for digital and print stories about conspiracy theories in America featuring canvas animations and a secret 3D timeline.",
+				"link": "https://www.theatlantic.com/shadowland/",
+				"img": "https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/atl_shadowland.jpg"
+			}
+		]
+	},
+	{
+		"hed": {
+			"orgTitle": "Axios",
+			"link": "https://www.axios.com/results?q=%22gerald%20rich%22&sort=1",
+			"jobTitle": "News Products Senior Developer",
+			"dates": "Jan. 2017 — Oct. 2019",
+			"guff": "Constructed CMS features and API endpoints to embed interactive graphics. Built Axios' first election graphics framework and maintained election microservices.",
+			"skills": [
+				"React",
+				"Next.js",
+				"Jest",
+				"GraphQL",
+				"Django Rest",
+				"AWS Lambda",
+				"Jenkins",
+				"ai2html"
+			]
+		},
+		"projects": [
+			{
+				"title": "Eden",
+				"role": "developer",
+				"desc": "A CMS designed for efficiency and made with empathy for visual journalists.",
+				"img": "https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/axios_eden.png",
+				"link": "http://www.alexislloyd.com/projects/eden.html"
+			},
+			{
+				"title": "2018 Midterm Elections",
+				"role": "developer",
+				"desc": "Developed microservices (data fetcher, automated screenshots) for dozens of live primary and election results embeds and synchronized updating graphics on Apple News",
+				"img": "https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/axios_2018_elections.png",
+				"link": "https://www.axios.com/2018/11/06/live-map-axios-2018-midterm-elections-results"
+			}
+		]
+	},
+	{
+		"hed": {
+			"orgTitle": "Vocativ",
+			"jobTitle": "Interactive Producer",
+			"dates": "Jun. 2015 — Nov. 2016",
+			"guff": "Produced data analyses and data visualizations for one to two stories every week, as well as engineered newsroom tools and applications every two weeks.",
+			"skills": ["D3", "Sass", "Electron", "Pitching & Reporting"]
+		},
+		"projects": [
+			{
+				"title": "DataProofer (lead developer) A downloadable desktop (Windows, Mac OS X, Linux) and command line application for proofreading spreadsheets funded in part by the Knight Foundation.",
+				"role": "lead developer",
+				"desc": "A downloadable command line app and desktop app (deprecated) for proofreading spreadsheets funded in part by the Knight Foundation.",
+				"img": "https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/vocativ_dataproofer.jpg"
+			},
+			{
+				"title": "Death Day",
+				"role": "lead developer",
+				"desc": "Choose your own adventure in this animated, mobile-friendly interactive story.",
+				"img": "https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/vocativ_death_day.jpg"
+			}
+		]
+	},
+	{
+		"hed": {
+			"orgTitle": "The Marshall Project",
+			"jobTitle": "Interactive Reporter",
+			"dates": "Sept. 2014 — May 2015",
+			"link": "https://www.themarshallproject.org/search?q=%22gerald+rich%22",
+			"guff": "Programmed biweekly interactive graphics about the criminal justice system, as well as reported on and researched digital crime. While I was there I gathered gigabytes of data, and developed contacts within the system — researchers, lawyers, advocates, and government officials.",
+			"skills": ["D3", "CSS", "R", "Pitching & Reporting"]
+		},
+		"projects": [
+			{
+				"title": "Shifting Away from Solitary",
+				"role": "reporter/developer",
+				"desc": "More states have passed solitary confinement reforms in 2014 than in the past 16 years.",
+				"img": "https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/tmp-solitary.jpg",
+				"link": "https://www.themarshallproject.org/2015/05/08/shifting-away-from-solitary"
+			},
+			{
+				"title": "A Pirate's Booty",
+				"role": "reporter",
+				"desc": "The Feds acquire a confusing asset: Bitcoin.",
+				"img": "https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/tmp-bitcoin.jpg",
+				"link": "https://www.themarshallproject.org/2015/05/08/a-pirate-s-booty"
+			}
+		]
+	},
+	{
+		"hed": {
+			"orgTitle": "ProPublica",
+			"jobTitle": "Web Producer",
+			"dates": "Feb. 2013 — Sept. 2014",
+			"guff": "Designed custom story layouts on a weekly basis and commissioned photos and illustrations for stories co-published with the New York Times Magazine, Boston Globe, Daily Beast and VICE. Specific engineering contributions included improving article QA tests, devloping a CSS grid for homepage redesigns, and templatizing story elements such as timelines, inserts, and sidebar graphics.",
+			"skills": ["Web Design", "Typography", "HTML", "CSS", "Ruby"]
+		},
+		"projects": [
+			{
+				"title": "The Military is Leaving the Missing Behind",
+				"desc": "TKTK how i researched imagery",
+				"role": "producer",
+				"img": "https://static.propublica.org/images/mia-leadphoto.JPG",
+				"link": "https://www.propublica.org/article/missing-in-action-us-military-slow-to-identify-service-members"
+			},
+			{
+				"title": "For a Respected Prosecutor, an Unpardonable Failure",
+				"desc": "TKTK how i placed imagery",
+				"role": "producer",
+				"img": "https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/pp_brooklyn_prosecutor.jpg",
+				"link": "http://www.propublica.org/article/for-a-respected-prosecutor-an-unpardonable-failure"
+			}
+		]
+	},
+	{
+		"hed": {
+			"orgTitle": "Mapbox",
+			"jobTitle": "Data Analyst",
+			"dates": "Oct. 2013 — Feb. 2014",
+			"guff": "Reverse-engineered enterprise sites with custom, open-source mapping software for clients such as Foursquare, Mozilla and DuckDuckGo. After downloading a client's website, I'd create working mockups for clients with new maps designed by other team members.",
+			"skills": ["GIS", "Node.js", "HTML", "CSS", "Bash"]
+		},
+		"projects": [
+			{
+				"title": "Mozilla",
+				"role": "developer",
+				"desc": "Integrated web maps into Mozilla's Location Services, a project to provide geolocation lookups based on cell tower and WiFi access point information.",
+				"img": "https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/mapbox-mozilla.jpg",
+				"link": "https://blog.mapbox.com/mozilla-location-services-coverage-map-68cd6dd475a5"
+			},
+			{
+				"title": "FourSquare",
+				"role": "developer",
+				"desc": "Demonstrated how to use Mapbox.js to create custom branded maps with Foursquare data which later went on to become the official maps of FourSquare.",
+				"img": "https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/mapbox-foursquare.jpg"
+			}
+		]
+	},
+	{
+		"hed": {
+			"orgTitle": "NPR Visuals",
+			"link": "https://blog.apps.npr.org/2013/06/06/how-to-setup-a-developers-environment.html",
+			"jobTitle": "Intern",
+			"dates": "Jun. 2013 — Aug. 2013",
+			"guff": "As an intern, I pair-programmed NPR's largest news app—its responsive editing interface, routes for reading and writing data, and an embeddable widget for member stations. I learned key concepts like object-relational mapping, routing delete requests, and data validation over the course of a summer.",
+			"skills": ["HTML5", "CSS3", "JavaScript", "Python"]
+		},
+		"projects": [
+			{
+				"title": "Playgrounds for Everyone",
+				"role": "developer",
+				"desc": "A community-edited guide to inclusive and accessible playgrounds for parents.",
+				"link": "http://apps.npr.org/playgrounds/",
+				"img": "https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/npr_playground_page.jpg"
+			}
+		]
+	},
+	{
+		"hed": {
+			"orgTitle": "Houston Public Radio",
+			"jobTitle": "Intern",
+			"dates": "Dec. 2012 - May 2013",
+			"guff": "Co-produced stories for the web, created graphics in R, as well as shot and edited photos and audio.",
+			"skills": ["HTML5", "CSS3", "JavaScript", "R"]
+		},
+		"projects": [
+			{
+				"title": "NRA Annual Meeting | 2013 Houston, TX",
+				"role": "photographer",
+				"desc": "Photo slideshow",
+				"img": "https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/hpr_guns.jpg",
+				"link": "https://www.flickr.com/photos/geraldrich/8712840424/in/set-72157633389643051"
+			},
+			{
+				"title": "Driving Demand for Personal Protection",
+				"role": "producer",
+				"desc": "Every year, thousands of Harris County residents apply for concealed handgun licenses or CHLs, with more and more applications being filed since the Newtown shooting.",
+				"img": "https://s3-us-west-2.amazonaws.com/projects.geraldri.ch/portfolio/hpr_graphic.jpg"
+			}
+		]
+	}
+]

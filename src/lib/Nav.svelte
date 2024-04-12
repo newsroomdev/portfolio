@@ -1,0 +1,92 @@
+<script lang="ts">
+	import { onMount } from 'svelte';
+	import { base } from '$app/paths';
+	import Serif from '$lib/Serif.svelte';
+	import SansSerif from '$lib/SansSerif.svelte';
+
+	$: scrolled = false;
+
+	onMount(() => {
+		const progressBar = document.getElementById('progress-bar');
+
+		const updateScroll = () => {
+			const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+			const scrollHeight =
+				document.documentElement.scrollHeight - document.documentElement.clientHeight;
+			const scrollProgress = (scrollTop / scrollHeight) * 100;
+
+			if (progressBar) progressBar.style.width = scrollProgress + '%';
+
+			window.scrollY > 0 ? (scrolled = true) : (scrolled = false);
+		};
+
+		window.addEventListener('scroll', updateScroll);
+
+		return () => {
+			window.removeEventListener('scroll', updateScroll);
+		};
+	});
+</script>
+
+<nav id="page-headr" class="animated slide-down headroom--top">
+	<h1 id="hed" class:scrolled>
+		<Serif weight={400}>Gerald Rich</Serif>
+	</h1>
+	<SansSerif weight={400}>
+		<div class="sub-nav" class:scrolled id="resume">
+			<a target="_blank" rel="noopener" href="{base}/GeraldRichResume.pdf">Résumé</a>
+		</div>
+		<div class="sub-nav" class:scrolled>
+			<a href="https://www.linkedin.com/in/geraldrich/">LinkedIn</a>
+		</div>
+	</SansSerif>
+	<div id="progress-bar" />
+</nav>
+
+<style lang="scss">
+	nav#page-headr {
+		position: sticky;
+		top: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #fff;
+		border-bottom: 1px solid #ccc;
+		max-width: 1260px;
+		width: 100%;
+		margin: 0 auto;
+		z-index: 1000;
+	}
+
+	#hed {
+		font-size: 2rem; /* initial font size */
+		transition: font-size 0.3s ease; /* transition effect */
+
+		&.scrolled {
+			font-size: 1.15rem; /* font size when scrolled */
+		}
+	}
+
+	.sub-nav {
+		display: inline-flex;
+		gap: 1rem;
+		transition: font-size 0.3s ease; /* transition effect */
+
+		&.scrolled {
+			font-size: 0.85rem;
+		}
+
+		&#resume {
+			margin: 0 0.2rem;
+		}
+	}
+
+	#progress-bar {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 1px;
+		background: cornflowerblue; /* change this to the color you want */
+		width: 0;
+	}
+</style>
