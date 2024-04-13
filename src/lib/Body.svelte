@@ -16,8 +16,8 @@
 <Nav />
 <header class="sr-only">Hello there!</header>
 <main class="rows">
-	{#each content as row}
-		<Row {row} />
+	{#each content as row, index}
+		<Row {row} {index} />
 	{/each}
 </main>
 <footer>

@@ -5,7 +5,7 @@
 	const modules = import.meta.glob('$lib/img/*.{avif,gif,heif,jpeg,jpg,png,tiff,webp}', {
 		import: 'default',
 		eager: true,
-		query: { w: 1260, enhanced: true }
+		query: { w: 780, enhanced: true }
 	});
 	let src = Object.entries(modules)
 		.filter(([key, value]) => key.includes(img))

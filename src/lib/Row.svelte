@@ -5,6 +5,7 @@
 	import SansSerif from './SansSerif.svelte';
 
 	export let row: Row;
+	export let index: number;
 	const single = row.projects.length === 1;
 </script>
 
@@ -15,7 +16,7 @@
 			<SansSerif>Projects</SansSerif>
 		</h3>
 		<div class="projects">
-			{#each row.projects as project, index}
+			{#each row.projects as project}
 				<Project {project} {index} />
 			{/each}
 		</div>
