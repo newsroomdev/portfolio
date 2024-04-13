@@ -45,7 +45,7 @@
 	}
 
 	.guff {
-		font-size: 0.85rem;
+		font-size: 0.9rem;
 	}
 
 	.description {
