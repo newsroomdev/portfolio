@@ -1,10 +1,12 @@
+@import './variables';
+
 a {
-	color: cornflowerblue;
+	color: $active-color;
 	text-decoration: none;
 }
 
 img {
-  border: 1px solid #eee;
-  width: 100%;
-  max-width: 420px;
+  border: none;
+  width: var(--size);
+  height: auto;
 }

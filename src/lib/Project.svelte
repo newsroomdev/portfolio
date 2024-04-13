@@ -2,34 +2,36 @@
 	import type { Project } from '$lib/types';
 	import SansSerif from '$lib/SansSerif.svelte';
 	import Serif from '$lib/Serif.svelte';
+	import Img from '$lib/Img.svelte';
+
 	export let project: Project;
-	const { title, role, desc, img, link } = project;
+	export let index: number;
 </script>
 
 <div class="sub-item">
 	<h4>
 		<SansSerif weight={400}>
 			<span style="font-style: italic">
-				{#if link}
-					<a class="title" href={link}>{title}</a>
+				{#if project.link}
+					<a class="title" href={project.link}>{project.title}</a>
 				{:else}
-					{title}
+					{project.title}
 				{/if}
 			</span>
-			{#if role}
-				<span class="role">({role})</span>
+			{#if project.role}
+				<span class="role">({project.role})</span>
 			{/if}
 		</SansSerif>
 	</h4>
-	{#if link}
-		<a href={link}>
-			<img src={img} loading="lazy" alt="" />
+	{#if project.link && project.img}
+		<a href={project.link}>
+			<Img img={project.img} alt={project.title} loading={index === 0 ? 'eager' : 'lazy'} />
 		</a>
-	{:else}
-		<img src={img} loading="lazy" alt="" />
+	{:else if project.img}
+		<Img img={project.img} alt={project.title} loading={index === 0 ? 'eager' : 'lazy'} />
 	{/if}
 	<Serif>
-		<p>{desc}</p>
+		<p>{project.desc}</p>
 	</Serif>
 </div>
 

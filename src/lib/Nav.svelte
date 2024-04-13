@@ -116,7 +116,7 @@
 		bottom: 0;
 		left: 0;
 		height: 1px;
-		background: cornflowerblue; /* change this to the color you want */
+		background: cornflowerblue;
 		width: 0;
 	}
 </style>

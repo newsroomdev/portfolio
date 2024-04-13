@@ -5,20 +5,18 @@
 	import SansSerif from './SansSerif.svelte';
 
 	export let row: Row;
-
-	const { hed, projects } = row;
-	const single = projects.length === 1;
+	const single = row.projects.length === 1;
 </script>
 
 <div class="row" class:single>
-	<SubHed {hed} />
+	<SubHed hed={row.hed} />
 	<div>
 		<h3>
 			<SansSerif>Projects</SansSerif>
 		</h3>
 		<div class="projects">
-			{#each projects as project}
-				<Project {project} />
+			{#each row.projects as project, index}
+				<Project {project} {index} />
 			{/each}
 		</div>
 	</div>
@@ -45,6 +43,7 @@
 		@media (min-width: $breakpoint-lg) {
 			justify-content: start;
 			column-gap: 2rem;
+			align-items: start;
 		}
 	}
 
@@ -53,6 +52,7 @@
 			display: flex;
 			justify-content: space-between;
 			column-gap: 5rem;
+			align-items: center;
 		}
 
 		.single {
