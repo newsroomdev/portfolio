@@ -55,6 +55,7 @@
 
 		h4 {
 			font-size: 1rem;
+			margin-top: 0.2rem;
 
 			@media (min-width: $breakpoint-md) {
 				text-align: center;
@@ -71,7 +72,7 @@
 		}
 
 		p {
-			font-size: 0.8rem;
+			font-size: 0.9rem;
 		}
 	}
 </style>

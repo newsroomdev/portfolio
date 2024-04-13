@@ -18,7 +18,7 @@
 	:global(html, body) {
 		margin: 0;
 		font-size: 16px;
-		line-height: 1.25;
+		line-height: 1.3;
 	}
 
 	.wrapper {
