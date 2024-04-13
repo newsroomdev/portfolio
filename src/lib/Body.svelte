@@ -14,11 +14,12 @@
 </script>
 
 <Nav />
-<div class="rows">
+<header class="sr-only">Hello there!</header>
+<main class="rows">
 	{#each content as row}
 		<Row {row} />
 	{/each}
-</div>
+</main>
 <footer>
 	<Serif>
 		<p class="footer">
@@ -48,5 +49,15 @@
 		margin: 2rem auto 1rem;
 		padding-top: 1rem;
 		border-top: 1px solid #ccc;
+	}
+
+	.sr-only:not(:focus):not(:active) {
+		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		height: 1px;
+		overflow: hidden;
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
 	}
 </style>

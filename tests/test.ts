@@ -6,7 +6,7 @@ test('index page has expected h1', async ({ page }) => {
 	await expect(page.getByRole('heading', { name: 'Gerald Rich' })).toBeVisible();
 });
 
-test.skip('homepage', () => {
+test.describe('homepage', () => {
 	test('should not have any automatically detectable accessibility issues', async ({ page }) => {
 		await page.goto('/');
 
