@@ -3,27 +3,30 @@
 	import SansSerif from '$lib/SansSerif.svelte';
 	import Serif from '$lib/Serif.svelte';
 	export let hed: Hed;
-	const { orgTitle, jobTitle, dates, guff, skills, link } = hed;
 </script>
 
 <div class="sub-hed">
 	<h2 class="h2">
 		<SansSerif weight={400}>
-			<a href={link}>{orgTitle}</a>
+			{#if hed.link}
+				<a href={hed.link}>{hed.orgTitle}</a>
+			{:else}
+				{hed.orgTitle}
+			{/if}
 		</SansSerif>
 		<SansSerif>
 			<span class="job-desc">
-				<span class="job-title">{jobTitle}</span>
+				<span class="job-title">{hed.jobTitle}</span>
 				<br />
-				<span class="dates">({dates})</span>
+				<span class="dates">({hed.dates})</span>
 			</span>
 		</SansSerif>
 	</h2>
 	<div class="guff">
 		<Serif>
-			<div>{guff}</div>
+			<div>{hed.guff}</div>
 			<div class="description">
-				Skills: {skills.join(', ')}
+				Skills: {hed.skills.join(', ')}
 			</div>
 		</Serif>
 	</div>
