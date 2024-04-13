@@ -42,12 +42,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile --strict-peer-dependencies
 
-      - name: Download images from R2
-        run: |
-          while read -r img; do
-            curl "https://geraldri.ch/images/$img" --output "src/lib/img/$img"
-          done < src/lib/img/index.txt
-
       - name: Build 🔧
         run: pnpm build
       

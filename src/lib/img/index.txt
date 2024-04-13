@@ -9,7 +9,6 @@ mapbox-foursquare.jpg
 mapbox-mozilla.png
 mia-leadphoto.jpeg
 missing-children-ap.png
-npr_playground_page.jpg
 npr_playground_page.png
 pp_brooklyn_prosecutor.jpg
 tmp-bitcoin.jpg
