@@ -6,13 +6,12 @@
 	export let description = "A few things I've worked on.";
 	export let keywords = 'portfolio, web development, front end, developer, journalism';
 	export let author = 'Gerald Rich';
-	export let url = base;
 
 	const schemaObj: WithContext<Person> = {
 		'@context': 'https://schema.org',
 		'@type': 'Person',
 		name: '{author}',
-		url: '{url}',
+		url: '{base}',
 		sameAs: [
 			'https://www.linkedin.com/in/geraldrich/',
 			'https://github.com/newsroomdev/',
@@ -20,7 +19,7 @@
 		],
 		hasOccupation: {
 			'@type': 'Occupation',
-			name: 'Interactive News Editor, AP'
+			name: 'Newsroom Developer Consultant'
 		}
 	};
 	const jsonLD = `
@@ -32,22 +31,22 @@
 
 <svelte:head>
 	<title>{title}</title>
-	<link
-		rel="stylesheet"
-		href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-		crossorigin="anonymous"
-	/>
 	<meta name="description" content={description} />
 	<meta name="keywords" content={keywords} />
 	<meta name="author" content={author} />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content={title} />
 	<meta property="og:description" content={description} />
-	<meta property="og:url" content={url} />
+	<meta property="og:url" content={base} />
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
-	<meta name="twitter:url" content={url} />
+	<meta name="twitter:url" content={base} />
 	{@html jsonLD}
+	<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet"
+	/>
 </svelte:head>

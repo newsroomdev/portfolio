@@ -1,0 +1,12 @@
+@import './variables';
+
+a {
+	color: $active-color;
+	text-decoration: none;
+}
+
+img {
+	border: none;
+	width: var(--size);
+	height: auto;
+}

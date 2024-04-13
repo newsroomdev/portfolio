@@ -4,6 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
+		"prebuild": "node scripts/prebuild.js",
 		"build": "vite build",
 		"preview": "vite preview",
 		"test": "playwright test",
@@ -13,13 +14,13 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
+		"@axe-core/playwright": "^4.9.0",
 		"@playwright/test": "^1.43.0",
 		"@sveltejs/adapter-auto": "^2.1.0",
 		"@sveltejs/adapter-static": "^2.0.3",
+		"@sveltejs/enhanced-img": "^0.2.0",
 		"@sveltejs/kit": "^2.5.5",
 		"@sveltejs/vite-plugin-svelte": "^3.0.2",
-		"@types/headroom.js": "^0.12.4",
-		"@types/jquery": "^1.10.39",
 		"@typescript-eslint/eslint-plugin": "^5.59.8",
 		"@typescript-eslint/parser": "^5.59.8",
 		"eslint": "^8.57.0",
@@ -37,9 +38,9 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"headroom.js": "^0.12.0",
-		"jquery": "^3.7.0",
-		"lazysizes": "^5.3.2"
+		"archieml": "^0.5.0",
+		"lazysizes": "^5.3.2",
+		"sanitize.css": "^13.0.0"
 	},
 	"packageManager": "pnpm@8.15.3+sha1.64838798f519c18029c1e8a1310e16101fc2eda0"
 }
