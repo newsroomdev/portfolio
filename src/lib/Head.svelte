@@ -46,7 +46,13 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
 	<link
+		rel="preload"
 		href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-		rel="stylesheet"
 	/>
+	<noscript
+		><link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+		/></noscript
+	>
 </svelte:head>
