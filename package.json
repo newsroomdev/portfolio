@@ -4,8 +4,8 @@
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
-		"prebuild": "find src/lib/img -type f > src/lib/img/index.txt",
-		"build": "vite build",
+		"prebuild": "node scripts/prebuild.js",
+		"build": "pnpm prebuild && vite build",
 		"preview": "vite preview",
 		"test": "playwright test",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",

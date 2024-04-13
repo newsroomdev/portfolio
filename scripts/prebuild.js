@@ -25,4 +25,5 @@ readdir(dir, (err, files) => {
 			process.exit(1);
 		}
 	});
+	console.log('updated index.txt file with image names');
 });
