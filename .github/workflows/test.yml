@@ -35,7 +35,7 @@ jobs:
         run: pnpm build
 
       - name: Run Tests 🧪
-        uses: docker://mcr.microsoft.com/playwright:v1.44.0-jammy
+        uses: docker://mcr.microsoft.com/playwright:v1.43.0-jammy
         with:
           args: npx playwright test
       
