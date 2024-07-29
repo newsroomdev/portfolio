@@ -72,7 +72,8 @@
 		}
 
 		p {
-			font-size: 0.9rem;
+			font-size: 0.8rem;
+			color: $gray-color;
 		}
 	}
 </style>
