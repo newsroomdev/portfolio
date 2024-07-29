@@ -2,7 +2,8 @@
 
 a {
 	color: $active-color;
-	text-decoration: none;
+    text-underline-offset: 2.25px;
+    text-decoration-thickness: from-font;
 }
 
 img {

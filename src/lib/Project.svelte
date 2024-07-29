@@ -31,7 +31,7 @@
 		<Img img={project.img} alt={project.title} loading={index === 0 ? 'eager' : 'lazy'} />
 	{/if}
 	<Serif>
-		<p data-sveltekit-preload-data="false">{@html project.desc}</p>
+		<p class="desc" data-sveltekit-preload-data="false">{@html project.desc}</p>
 	</Serif>
 </div>
 
@@ -71,12 +71,12 @@
 			}
 		}
 
-		p {
+		p.desc {
 			font-size: 0.8rem;
 			color: $gray-color;
 
 			a {
-				text-decoration: underline;
+				text-decoration: underline !important;
 			}
 		}
 	}
