@@ -74,6 +74,10 @@
 		p {
 			font-size: 0.8rem;
 			color: $gray-color;
+
+			a {
+				text-decoration: underline;
+			}
 		}
 	}
 </style>
