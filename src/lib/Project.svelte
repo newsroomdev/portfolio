@@ -31,7 +31,7 @@
 		<Img img={project.img} alt={project.title} loading={index === 0 ? 'eager' : 'lazy'} />
 	{/if}
 	<Serif>
-		<p>{project.desc}</p>
+		<p>{@html project.desc}</p>
 	</Serif>
 </div>
 
