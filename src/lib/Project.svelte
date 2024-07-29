@@ -31,7 +31,7 @@
 		<Img img={project.img} alt={project.title} loading={index === 0 ? 'eager' : 'lazy'} />
 	{/if}
 	<Serif>
-		<p>{@html project.desc}</p>
+		<p data-sveltekit-preload-data="false">{@html project.desc}</p>
 	</Serif>
 </div>
 
