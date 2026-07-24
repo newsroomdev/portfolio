@@ -2,6 +2,9 @@
 atl_shadowland.jpg
 axios_2018_elections.png
 axios_eden.png
+bln_agendawatch.png
+bln_datatalk.png
+bln_police_records.png
 family-separation-atl.png
 hpr_graphic.jpg
 hpr_guns.jpg
